@@ -1,4 +1,4 @@
-# Forgetting for mitigating Robust Overfitting in Adversarial Training (FOMO)
+# Forget to mitigate Robust Overfitting in Adversarial Training (FOMO)
 
 This repository contains the official implementation of the ICLR 2024 paper **The effectiveness of random forgetting for robust generalization** [[Paper](https://openreview.net/forum?id=MEGQGNUfPx)] by **Vijaya Raghavan T Ramkumar, Elahe Arani and Bahram Zonooz** in [PyTorch](https://pytorch.org/). 
 
