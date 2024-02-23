@@ -11,15 +11,14 @@ For more details, please see the [Paper](https://openreview.net/forum?id=MEGQGNU
 
 ## Requirements
 
-The code has been implemented and tested with `Python 3.8` and `PyTorch 1.12.1`.  To install the required packages: 
+The code has been implemented and tested with `Python 3.8`, `PyTorch 1.12.1` and Torchattacks 3.2.7.  To install the required packages: 
 ```bash
 $ pip install -r requirements.txt
 ```
 
 
 ### Training 
-
-Run [`LURE_main.py`](./LURE_main.py) for training the model in Anytiem framework with selective forgetting on CIFAR10 and CIFAR100. Run `ALMA.py` for training the model without selective forgetting which is the warm-started model. 
+Datasets used: CIFAR10, CIFAR100, SVHN, and TinyImageNet were used for training and evaluation. The code was built on top of the [Robust Weight Perturbation repo](https://arxiv.org/abs/2205.14826). Run [`LURE_main.py`](./LURE_main.py) for training the model in Anytiem framework with selective forgetting on CIFAR10 and CIFAR100. Run `ALMA.py` for training the model without selective forgetting which is the warm-started model. 
 
 ```
 $ python .\LURE_main.py --data <data_dir> --log-dir <log_dir> --run <name_of_the_experiment> --dataset cifar10 --arch resnet18 \
